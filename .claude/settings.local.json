@@ -24,7 +24,8 @@
       "Read(//c/Users/User/.claude/**)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
       "Bash(netstat -ano)",
-      "Bash(rm -rf \"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d---------Sites-my-ag-site\\\\e10c04e1-e3a4-4083-93d3-ba2e951cf54d\\\\scratchpad\\\\pw14\")"
+      "Bash(rm -rf \"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d---------Sites-my-ag-site\\\\e10c04e1-e3a4-4083-93d3-ba2e951cf54d\\\\scratchpad\\\\pw14\")",
+      "Bash(mkdir -p 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d---------Sites-my-ag-site\\\\e10c04e1-e3a4-4083-93d3-ba2e951cf54d\\\\scratchpad/pw15')"
     ]
   }
 }

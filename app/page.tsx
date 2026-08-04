@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import BarrierFlipCard from '@/components/BarrierFlipCard';
 
 export default function Home() {
   return (
@@ -76,52 +77,72 @@ export default function Home() {
       <section className="py-20 lg:py-28 bg-slate-50 border-y border-slate-100">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-amber-600 font-semibold text-sm uppercase tracking-wider mb-4 block">Диагностика мышления</span>
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Что мешает вам учиться прямо сейчас?</h2>
             <p className="text-xl text-slate-600 leading-relaxed">
               Чаще всего — не нехватка способностей, а ожидание особых условий. Не ожидайте, а создавайте среду, учитесь понемногу каждый день — именно так появляется настоящее изменение. Маленькие шаги создают результат.
             </p>
           </div>
 
+          <p className="text-center text-sm text-slate-400 mb-6 md:hidden">Нажмите на карточку, чтобы увидеть решение</p>
+
           <div className="grid md:grid-cols-3 gap-8">
             {/* Карточка 1 */}
-            <div className="bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
-              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6 text-2xl">⏳</div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">«У меня нет времени на обучение»</h3>
-              <p className="text-slate-600 leading-relaxed mb-4">Кажется, что учеба — это отрыв от реальных задач и потеря темпа.</p>
-              <div className="pt-4 border-t border-slate-200">
-                <p className="text-sm font-semibold text-amber-700 flex items-start gap-2">
-                  <span className="text-lg">💡</span>
-                  <span>Осознанное обучение не отнимает время, а умножает его. 10 минут рефлексии в день экономят часы тушения пожаров.</span>
-                </p>
-              </div>
-            </div>
+            <BarrierFlipCard
+              title="«У меня нет времени на обучение»"
+              description="Кажется, что учеба — это отрыв от реальных задач и потеря темпа."
+              solution="Осознанное обучение не отнимает время, а умножает его. 10 минут рефлексии в день экономят часы тушения пожаров."
+              graphic={
+                <svg viewBox="0 0 120 120" className="w-24 h-24" aria-hidden="true">
+                  <circle cx="60" cy="60" r="56" className="fill-amber-50" />
+                  <path d="M24 44a40 40 0 000 32" className="stroke-amber-300" strokeWidth="3" strokeLinecap="round" fill="none" />
+                  <path d="M96 44a40 40 0 010 32" className="stroke-amber-300" strokeWidth="3" strokeLinecap="round" fill="none" />
+                  <circle cx="60" cy="60" r="34" className="fill-white stroke-slate-900" strokeWidth="4" />
+                  <line x1="60" y1="60" x2="60" y2="38" className="stroke-slate-900" strokeWidth="4" strokeLinecap="round" />
+                  <line x1="60" y1="60" x2="76" y2="68" className="stroke-amber-500" strokeWidth="4" strokeLinecap="round" />
+                  <circle cx="60" cy="60" r="3.5" className="fill-slate-900" />
+                </svg>
+              }
+            />
 
             {/* Карточка 2 */}
-            <div className="bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
-              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6 text-2xl">🌪️</div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">«Жду идеального момента для изменений»</h3>
-              <p className="text-slate-600 leading-relaxed mb-4">Страх начать, пока в бизнесе или в голове не наступит «полный штиль».</p>
-              <div className="pt-4 border-t border-slate-200">
-                <p className="text-sm font-semibold text-amber-700 flex items-start gap-2">
-                  <span className="text-lg">💡</span>
-                  <span>Идеального момента не существует. Учиться и менять систему нужно прямо в процессе, делая маленькие шаги.</span>
-                </p>
-              </div>
-            </div>
+            <BarrierFlipCard
+              title="«Жду идеального момента для изменений»"
+              description="Страх начать, пока в бизнесе или в голове не наступит «полный штиль»."
+              solution="Идеального момента не существует. Учиться и менять систему нужно прямо в процессе, делая маленькие шаги."
+              graphic={
+                <svg viewBox="0 0 120 120" className="w-24 h-24" aria-hidden="true">
+                  <circle cx="60" cy="60" r="56" className="fill-amber-50" />
+                  <circle cx="88" cy="76" r="11" className="fill-amber-300" />
+                  <g className="stroke-amber-300" strokeWidth="3" strokeLinecap="round">
+                    <line x1="88" y1="56" x2="88" y2="61" />
+                    <line x1="107" y1="76" x2="102" y2="76" />
+                    <line x1="99" y1="65" x2="96" y2="68" />
+                  </g>
+                  <ellipse cx="46" cy="54" rx="26" ry="15" className="fill-slate-900" />
+                  <circle cx="32" cy="50" r="13" className="fill-slate-900" />
+                  <circle cx="58" cy="47" r="15" className="fill-slate-900" />
+                  <path d="M50 68l-8 16h9l-5 14 16-20h-10l6-10z" className="fill-amber-500" />
+                </svg>
+              }
+            />
 
             {/* Карточка 3 */}
-            <div className="bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
-              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6 text-2xl">🧩</div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">«Сотрудники не берут ответственность»</h3>
-              <p className="text-slate-600 leading-relaxed mb-4">Ощущение, что вы тянете всё на себе, а команда просто исполняет приказы.</p>
-              <div className="pt-4 border-t border-slate-200">
-                <p className="text-sm font-semibold text-amber-700 flex items-start gap-2">
-                  <span className="text-lg">💡</span>
-                  <span>Люди не растут в условиях тотального контроля. Им нужна безопасная психологическая среда и смыслы, а не просто инструкции.</span>
-                </p>
-              </div>
-            </div>
+            <BarrierFlipCard
+              title="«Сотрудники не берут ответственность»"
+              description="Ощущение, что вы тянете всё на себе, а команда просто исполняет приказы."
+              solution="Люди не растут в условиях тотального контроля. Им нужна безопасная психологическая среда и смыслы, а не просто инструкции."
+              graphic={
+                <svg viewBox="0 0 120 120" className="w-24 h-24" aria-hidden="true">
+                  <circle cx="60" cy="60" r="56" className="fill-amber-50" />
+                  <rect x="30" y="30" width="26" height="26" rx="6" className="fill-slate-900" />
+                  <circle cx="56" cy="43" r="6.5" className="fill-slate-900" />
+                  <rect x="64" y="30" width="26" height="26" rx="6" className="fill-slate-300" />
+                  <rect x="30" y="64" width="26" height="26" rx="6" className="fill-slate-300" />
+                  <rect x="64" y="64" width="26" height="26" rx="6" className="fill-amber-500" />
+                  <circle cx="77" cy="64" r="6.5" className="fill-amber-500" />
+                </svg>
+              }
+            />
           </div>
 
           <div className="text-center mt-12">
