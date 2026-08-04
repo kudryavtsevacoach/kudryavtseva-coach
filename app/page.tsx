@@ -1,0 +1,221 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
+export default function Home() {
+  return (
+    <>
+      {/* --- ГЛАВНЫЙ ЭКРАН (Hero) --- */}
+      <section className="relative overflow-hidden pt-16 pb-16 lg:pt-20 lg:pb-20">
+        <div className="pointer-events-none absolute -top-40 -right-40 w-[36rem] h-[36rem] bg-amber-100/50 rounded-full blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-32 -left-32 w-[28rem] h-[28rem] bg-slate-100 rounded-full blur-3xl" />
+
+        <div className="relative max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+            <div>
+              <h1 className="text-3xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15] mb-8">
+                Обучение со смыслом.<br />
+                <span className="text-slate-400">Осознанность как результат.</span>
+              </h1>
+
+              <p className="text-xl text-slate-600 leading-relaxed mb-6 max-w-lg font-medium">
+                Человеческий капитал определяет, сможет ли компания совершить прорыв или пережить трудные времена, станет ли лидером в своей индустрии.
+              </p>
+
+              <p className="text-lg text-slate-500 leading-relaxed mb-8 max-w-lg">
+                Система осознанных изменений — это пространство, где адаптивный интеллект, психология и бизнес-технологии работают не по отдельности, а вместе. Создаю среду для роста личности, команд и бизнеса.
+              </p>
+
+              <div className="mb-10 max-w-lg">
+                <p className="text-lg text-slate-500 leading-relaxed mb-4">Это подход, при котором:</p>
+                <ul className="space-y-3 mb-4">
+                  <li className="flex items-start gap-3">
+                    <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-[10px] font-bold">✓</span>
+                    <span className="text-lg text-slate-500 leading-relaxed">команда работает вовлечённо</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-[10px] font-bold">✓</span>
+                    <span className="text-lg text-slate-500 leading-relaxed">лидер управляет без выгорания</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-[10px] font-bold">✓</span>
+                    <span className="text-lg text-slate-500 leading-relaxed">бизнес гибко адаптируется к любым штормам, сохраняя человечность и генерируя амбициозный результат</span>
+                  </li>
+                </ul>
+                <p className="text-lg text-slate-500 leading-relaxed font-medium">С этим и работаю.</p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/services" className="group inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-slate-900/20">
+                  Выбрать формат работы
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                </Link>
+                <Link href="/about" className="inline-flex justify-center bg-white/70 hover:bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-full text-base font-semibold transition-all backdrop-blur-sm">
+                  Узнать обо мне
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-tr from-amber-200/40 via-transparent to-slate-300/40 rounded-[2.5rem] blur-2xl" />
+              <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-300/60 ring-1 ring-slate-900/5">
+                <Image
+                  src="/photos/hero/nadezhda-hero.jpg"
+                  alt="Надежда Кудрявцева - AQ бизнес-коуч"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- НОВЫЙ БЛОК: ЧЕК-ЛИСТ ОСОЗНАННОСТИ --- */}
+      <section className="py-20 lg:py-28 bg-slate-50 border-y border-slate-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-amber-600 font-semibold text-sm uppercase tracking-wider mb-4 block">Диагностика мышления</span>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Что мешает вам учиться прямо сейчас?</h2>
+            <p className="text-xl text-slate-600 leading-relaxed">
+              Чаще всего — не нехватка способностей, а ожидание особых условий. Не ожидайте, а создавайте среду, учитесь понемногу каждый день — именно так появляется настоящее изменение. Маленькие шаги создают результат.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Карточка 1 */}
+            <div className="bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6 text-2xl">⏳</div>
+              <h3 className="text-lg font-bold text-slate-900 mb-3">«У меня нет времени на обучение»</h3>
+              <p className="text-slate-600 leading-relaxed mb-4">Кажется, что учеба — это отрыв от реальных задач и потеря темпа.</p>
+              <div className="pt-4 border-t border-slate-200">
+                <p className="text-sm font-semibold text-amber-700 flex items-start gap-2">
+                  <span className="text-lg">💡</span>
+                  <span>Осознанное обучение не отнимает время, а умножает его. 10 минут рефлексии в день экономят часы тушения пожаров.</span>
+                </p>
+              </div>
+            </div>
+
+            {/* Карточка 2 */}
+            <div className="bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6 text-2xl">🌪️</div>
+              <h3 className="text-lg font-bold text-slate-900 mb-3">«Жду идеального момента для изменений»</h3>
+              <p className="text-slate-600 leading-relaxed mb-4">Страх начать, пока в бизнесе или в голове не наступит «полный штиль».</p>
+              <div className="pt-4 border-t border-slate-200">
+                <p className="text-sm font-semibold text-amber-700 flex items-start gap-2">
+                  <span className="text-lg">💡</span>
+                  <span>Идеального момента не существует. Учиться и менять систему нужно прямо в процессе, делая маленькие шаги.</span>
+                </p>
+              </div>
+            </div>
+
+            {/* Карточка 3 */}
+            <div className="bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6 text-2xl">🧩</div>
+              <h3 className="text-lg font-bold text-slate-900 mb-3">«Сотрудники не берут ответственность»</h3>
+              <p className="text-slate-600 leading-relaxed mb-4">Ощущение, что вы тянете всё на себе, а команда просто исполняет приказы.</p>
+              <div className="pt-4 border-t border-slate-200">
+                <p className="text-sm font-semibold text-amber-700 flex items-start gap-2">
+                  <span className="text-lg">💡</span>
+                  <span>Люди не растут в условиях тотального контроля. Им нужна безопасная психологическая среда и смыслы, а не просто инструкции.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-slate-600 mb-6 text-lg">Узнали себя или свою команду хотя бы в одном пункте?</p>
+            <Link href="/services" className="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-slate-900/20">
+              Начать с маленького шага
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* --- 3 НАПРАВЛЕНИЯ (Сегментация) --- */}
+      <section className="py-16 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">Направления работы</h2>
+            <p className="text-lg text-slate-600">Я помогаю расти на всех уровнях: от личной устойчивости лидера до системного управления командой.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {/* Блок 1 */}
+            <div className="group relative bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 lg:p-10 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
+              <span className="absolute top-8 right-8 text-5xl font-bold text-slate-100 group-hover:text-amber-100 transition-colors">01</span>
+              <div className="relative w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🚀</div>
+              <h3 className="relative text-xl font-bold text-slate-900 mb-4">Для предпринимателей, собственников и руководителей</h3>
+              <p className="relative text-slate-600 mb-6 leading-relaxed">Прокачайте AQ-мышление, навыки системного делегирования и взрастите лидерские компетенции, чтобы действовать из системы и смысла, а не из стресса.</p>
+              <ul className="relative text-sm text-slate-500 space-y-2 mb-8">
+                <li>• Диагностика управленческих компетенций</li>
+                <li>• ИИ-тренажер управленческих диалогов</li>
+              </ul>
+              <Link href="/services/for-leaders" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all">
+                Подробнее <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </Link>
+            </div>
+
+            {/* Блок 2 */}
+            <div className="group relative bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 lg:p-10 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
+              <span className="absolute top-8 right-8 text-5xl font-bold text-slate-100 group-hover:text-amber-100 transition-colors">02</span>
+              <div className="relative w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🏢</div>
+              <h3 className="relative text-xl font-bold text-slate-900 mb-4">Для команд бизнеса</h3>
+              <p className="relative text-slate-600 mb-6 leading-relaxed">Трансформация командной работы, сонастройка топ-менеджеров, аудит скрытых конфликтов и создание системы экологичного управления.</p>
+              <ul className="relative text-sm text-slate-500 space-y-2 mb-8">
+                <li>• Ассессмент-центр</li>
+                <li>• HR-архитектура и матрицы</li>
+                <li>• Командные бизнес-игры</li>
+              </ul>
+              <Link href="/services/for-teams" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all">
+                Подробнее <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </Link>
+            </div>
+
+            {/* Блок 3 */}
+            <div className="group relative bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 lg:p-10 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
+              <span className="absolute top-8 right-8 text-5xl font-bold text-slate-100 group-hover:text-amber-100 transition-colors">03</span>
+              <div className="relative w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🧠</div>
+              <h3 className="relative text-xl font-bold text-slate-900 mb-4">Для личного развития</h3>
+              <p className="relative text-slate-600 mb-6 leading-relaxed">Для тех, кто на перепутье или в кризисе идентичности. Помогаю взрастить внутреннюю устойчивость и опору, чтобы стать тем, кто может реализовывать цели.</p>
+              <ul className="relative text-sm text-slate-500 space-y-2 mb-8">
+                <li>• Интегральный коучинг</li>
+                <li>• Программа «Пересборка»</li>
+                <li>• Авторские практикумы</li>
+              </ul>
+              <Link href="/services/personal-growth" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all">
+                Подробнее <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- CTA --- */}
+      <section className="py-16 lg:py-20 bg-[#FAFAF9]">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-slate-900 px-8 py-16 lg:px-20 lg:py-20 text-center text-white shadow-2xl shadow-slate-900/20">
+            <div className="pointer-events-none absolute -top-24 -right-24 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-24 -left-24 w-96 h-96 bg-slate-700/30 rounded-full blur-3xl" />
+            <div className="relative">
+              <h2 className="text-4xl lg:text-5xl font-bold mb-8">Готовы раскрыть потенциал вашей команды?</h2>
+              <p className="text-xl text-slate-300 mb-12 leading-relaxed max-w-2xl mx-auto">
+                Всего за 1.5–2 часа диагностики вы получите четкое понимание, какие управленческие инструменты помогут вам выйти на новый уровень.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Link href="/services/for-leaders/diagnostics" className="inline-flex justify-center bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-amber-900/30">
+                  Узнать о диагностике
+                </Link>
+                <Link href="/contacts" className="inline-flex justify-center bg-transparent border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-full text-base font-semibold transition-all">
+                  Связаться со мной
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
