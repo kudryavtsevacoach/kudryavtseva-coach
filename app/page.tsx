@@ -1,74 +1,123 @@
+import { Fragment } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import BarrierFlipCard from '@/components/BarrierFlipCard';
+
+const TICKER_ITEMS = [
+  'Психолог-аналитик',
+  'AQ бизнес-коуч',
+  'Тренер-наставник AGP',
+  'Призёр «Мастер бизнес-тренинга 2025»',
+  '7+ лет в обучении взрослых',
+  'Союз РПЧ',
+  'Ижевск · Онлайн',
+];
 
 export default function Home() {
   return (
     <>
       {/* --- ГЛАВНЫЙ ЭКРАН (Hero) --- */}
-      <section className="relative overflow-hidden pt-16 pb-16 lg:pt-20 lg:pb-20">
-        <div className="pointer-events-none absolute -top-40 -right-40 w-[36rem] h-[36rem] bg-amber-100/50 rounded-full blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-32 -left-32 w-[28rem] h-[28rem] bg-slate-100 rounded-full blur-3xl" />
+      <section className="relative">
+        <div className="relative overflow-hidden pt-16 pb-16 lg:pt-20 lg:pb-20">
+          <div className="pointer-events-none absolute -top-40 -right-40 w-[36rem] h-[36rem] bg-amber-100/50 rounded-full blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-32 -left-32 w-[28rem] h-[28rem] bg-slate-100 rounded-full blur-3xl" />
 
-        <div className="relative max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-            <div>
-              <h1 className="text-3xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15] mb-8">
-                Обучение со смыслом.<br />
-                <span className="text-slate-400">Осознанность как результат.</span>
-              </h1>
+          <div className="relative max-w-7xl mx-auto px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-x-20 lg:gap-y-8">
+              {/* Блок 1: таблетка + заголовок */}
+              <div className="lg:col-start-1 lg:row-start-1">
+                <div className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 px-4 py-2 bg-amber-100 text-amber-800 rounded-2xl sm:rounded-full text-xs font-medium mb-6 max-w-full">
+                  <span className="whitespace-nowrap">Психолог-аналитик</span>
+                  <span className="opacity-40">·</span>
+                  <span className="whitespace-nowrap">AQ бизнес-коуч</span>
+                  <span className="opacity-40">·</span>
+                  <span className="whitespace-nowrap">Тренер-наставник AGP</span>
+                </div>
 
-              <p className="text-xl text-slate-600 leading-relaxed mb-6 max-w-lg font-medium">
-                Человеческий капитал определяет, сможет ли компания совершить прорыв или пережить трудные времена, станет ли лидером в своей индустрии.
-              </p>
+                <h1
+                  className="text-3xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15]"
+                  aria-label="Архитектор развития. Изменения, которые остаются."
+                >
+                  Архитектор развития.<br />
+                  Изменения, которые остаются.
+                </h1>
+              </div>
 
-              <p className="text-lg text-slate-500 leading-relaxed mb-8 max-w-lg">
-                Система осознанных изменений — это пространство, где адаптивный интеллект, психология и бизнес-технологии работают не по отдельности, а вместе. Создаю среду для роста личности, команд и бизнеса.
-              </p>
+              {/* Блок 2: фото + имя */}
+              <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:self-center">
+                <div className="relative max-w-[280px] mx-auto lg:max-w-none">
+                  <div className="absolute -inset-4 bg-gradient-to-tr from-amber-200/40 via-transparent to-slate-300/40 rounded-[2.5rem] blur-2xl" />
+                  <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-300/60 ring-1 ring-slate-900/5">
+                    <Image
+                      src="/photos/hero/nadezhda-hero.jpg"
+                      alt="Надежда Кудрявцева — психолог-аналитик, AQ бизнес-коуч"
+                      fill
+                      priority
+                      sizes="(min-width: 1024px) 50vw, 280px"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="text-center mt-4">
+                  <p className="font-medium text-slate-900">Надежда Кудрявцева</p>
+                  <p className="text-xs text-slate-500 mt-0.5">Архитектор развития</p>
+                </div>
+              </div>
 
-              <div className="mb-10 max-w-lg">
-                <p className="text-lg text-slate-500 leading-relaxed mb-4">Это подход, при котором:</p>
-                <ul className="space-y-3 mb-4">
+              {/* Блок 3: подзаголовок, описание, буллеты, кнопки */}
+              <div className="lg:col-start-1 lg:row-start-2">
+                <p className="text-lg text-slate-600 leading-relaxed mb-6 max-w-lg">
+                  Помогаю лидерам и командам расти устойчиво — через психологию управления, адаптивный интеллект и личностное развитие.
+                </p>
+
+                <div className="border-l-2 border-amber-500 rounded-none pl-3 mb-8 max-w-lg">
+                  <p className="text-sm text-slate-500 leading-relaxed">
+                    Работаю с психологией лидерства, кризисами идентичности и взрослением личности. AQ-методология, психологический анализ и управленческие инструменты — в одной практике.
+                  </p>
+                </div>
+
+                <ul className="space-y-3 mb-10 max-w-lg">
                   <li className="flex items-start gap-3">
                     <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-[10px] font-bold">✓</span>
-                    <span className="text-lg text-slate-500 leading-relaxed">команда работает вовлечённо</span>
+                    <span className="text-slate-600 leading-relaxed">Лидер управляет из зрелости, а не из тревоги и гиперконтроля</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-[10px] font-bold">✓</span>
-                    <span className="text-lg text-slate-500 leading-relaxed">лидер управляет без выгорания</span>
+                    <span className="text-slate-600 leading-relaxed">Команда работает ответственно и ассертивно</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-[10px] font-bold">✓</span>
-                    <span className="text-lg text-slate-500 leading-relaxed">бизнес гибко адаптируется к любым штормам, сохраняя человечность и генерируя амбициозный результат</span>
+                    <span className="text-slate-600 leading-relaxed">Кризисы идентичности становятся точками роста и перехода</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-[10px] font-bold">✓</span>
+                    <span className="text-slate-600 leading-relaxed">Изменения держатся — потому что меняется личность, а не поведение</span>
                   </li>
                 </ul>
-                <p className="text-lg text-slate-500 leading-relaxed font-medium">С этим и работаю.</p>
-              </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/services" className="group inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-slate-900/20">
-                  Выбрать формат работы
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                </Link>
-                <Link href="/about" className="inline-flex justify-center bg-white/70 hover:bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-full text-base font-semibold transition-all backdrop-blur-sm">
-                  Узнать обо мне
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/services/for-leaders/diagnostics" className="group inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-amber-900/20">
+                    Пройти диагностику
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                  </Link>
+                  <Link href="/services" className="inline-flex justify-center bg-white/70 hover:bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-full text-base font-semibold transition-all backdrop-blur-sm">
+                    Посмотреть программы
+                  </Link>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-amber-200/40 via-transparent to-slate-300/40 rounded-[2.5rem] blur-2xl" />
-              <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-300/60 ring-1 ring-slate-900/5">
-                <Image
-                  src="/photos/hero/nadezhda-hero.jpg"
-                  alt="Надежда Кудрявцева - AQ бизнес-коуч"
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-            </div>
+        {/* Бегущая строка */}
+        <div aria-hidden="true" className="border-t border-slate-200 bg-slate-100/70 overflow-hidden py-2.5">
+          <div className="flex gap-5 whitespace-nowrap w-max animate-ticker text-xs text-slate-500">
+            {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
+              <Fragment key={i}>
+                <span>{item}</span>
+                <span className="opacity-40">·</span>
+              </Fragment>
+            ))}
           </div>
         </div>
       </section>
