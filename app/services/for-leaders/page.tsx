@@ -70,9 +70,9 @@ export default function ForLeadersPage() {
                 <Link href="/diagnostics" className="inline-flex justify-center bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-amber-900/30">
                   Узнать о диагностике
                 </Link>
-                <Link href="/contacts" className="inline-flex justify-center bg-transparent border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-full text-base font-semibold transition-all">
+                <a href="https://www.b17.ru/nadiya_coach/#contact" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center bg-transparent border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-full text-base font-semibold transition-all">
                   Связаться со мной
-                </Link>
+                </a>
               </div>
             </div>
           </div>

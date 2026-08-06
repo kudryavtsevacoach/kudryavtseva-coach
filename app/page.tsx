@@ -37,7 +37,7 @@ export default function Home() {
                 </div>
 
                 <h1
-                  className="text-3xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15]"
+                  className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 leading-[1.2]"
                   aria-label="Обучение со смыслом. Навыки управления личной эффективностью и командой."
                 >
                   Обучение со смыслом.<br />
@@ -92,12 +92,12 @@ export default function Home() {
                 </ul>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/services/for-leaders/diagnostics" className="group inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-amber-900/20">
+                  <Link href="/diagnostics" className="group inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-amber-900/20">
                     Пройти диагностику
                     <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                   </Link>
-                  <Link href="/services" className="inline-flex justify-center bg-white/70 hover:bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-full text-base font-semibold transition-all backdrop-blur-sm">
-                    Посмотреть программы
+                  <Link href="/about" className="inline-flex justify-center bg-white/70 hover:bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-full text-base font-semibold transition-all backdrop-blur-sm">
+                    Обо мне
                   </Link>
                 </div>
               </div>
@@ -192,7 +192,7 @@ export default function Home() {
 
           <div className="text-center mt-12">
             <p className="text-slate-600 mb-6 text-lg">Узнали себя или свою команду хотя бы в одном пункте?</p>
-            <Link href="/services" className="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-slate-900/20">
+            <Link href="/diagnostics" className="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-slate-900/20">
               Начать с маленького шага
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </Link>
@@ -223,8 +223,8 @@ export default function Home() {
                 <li>• AI-тренажёр управленческих диалогов</li>
                 <li>• Программа «Руководитель-лидер»</li>
               </ul>
-              <Link href="/services/for-leaders/diagnostics" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all mt-auto">
-                Пройти диагностику <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              <Link href="/services/for-leaders" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all mt-auto">
+                Узнать подробнее <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </Link>
             </div>
 
