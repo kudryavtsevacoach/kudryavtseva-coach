@@ -18,7 +18,7 @@ export default function Header() {
           </div>
           <div className="block">
             <span className="block font-bold text-base sm:text-lg leading-tight text-slate-900">Надежда Кудрявцева</span>
-            <span className="hidden sm:block text-[10px] text-slate-500 font-medium tracking-wider uppercase">Проводник знаний в практику</span>
+            <span className="hidden sm:block text-[10px] text-slate-500 font-medium tracking-wider uppercase">Про систему осознанных изменений</span>
           </div>
         </Link>
 
