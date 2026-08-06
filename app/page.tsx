@@ -212,8 +212,10 @@ export default function Home() {
             {/* Карточка 1 */}
             <div className="group relative flex flex-col h-full bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 lg:p-10 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
               <span className="absolute top-8 right-8 text-5xl font-bold text-slate-100 group-hover:text-amber-100 transition-colors">01</span>
-              <div className="relative w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🚀</div>
-              <span className="relative inline-block self-start px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-semibold mb-6">Для предпринимателей, лидеров и руководителей</span>
+              <div className="relative flex items-center gap-3 mb-6 pr-14">
+                <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-110 transition-transform">🚀</div>
+                <span className="text-sm font-bold text-amber-700 uppercase tracking-wide leading-snug">Для предпринимателей, лидеров и руководителей</span>
+              </div>
               <h3 className="relative text-xl font-bold text-slate-900 mb-4">Масштабируете бизнес через людей или хотите выйти из ручного управления?</h3>
               <p className="relative text-slate-600 mb-6 leading-relaxed flex-1">Для предпринимателей и руководителей, которые масштабируют бизнес через людей или хотят выйти из ручного управления, чтобы действовать из системы и смысла, а не из стресса. Развиваем AQ-мышление, навыки делегирования и лидерские компетенции.</p>
               <ul className="relative text-sm text-slate-500 space-y-2 mb-8">
@@ -229,8 +231,10 @@ export default function Home() {
             {/* Карточка 2 */}
             <div className="group relative flex flex-col h-full bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 lg:p-10 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
               <span className="absolute top-8 right-8 text-5xl font-bold text-slate-100 group-hover:text-amber-100 transition-colors">02</span>
-              <div className="relative w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🏢</div>
-              <span className="relative inline-block self-start px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-semibold mb-6">Для команд бизнеса</span>
+              <div className="relative flex items-center gap-3 mb-6 pr-14">
+                <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-110 transition-transform">🏢</div>
+                <span className="text-sm font-bold text-emerald-700 uppercase tracking-wide leading-snug">Для команд бизнеса</span>
+              </div>
               <h3 className="relative text-xl font-bold text-slate-900 mb-4">Команда есть. Системы развития человеческого капитала — нет</h3>
               <p className="relative text-slate-600 mb-6 leading-relaxed flex-1">Для HR-директоров и T&amp;D, которым нужна измеримая программа развития лидерства с данными до и после. Начинаем с HR-диагностики: ассессмент, образовательные проекты.</p>
               <ul className="relative text-sm text-slate-500 space-y-2 mb-8">
@@ -246,8 +250,10 @@ export default function Home() {
             {/* Карточка 3 */}
             <div className="group relative flex flex-col h-full bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 lg:p-10 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
               <span className="absolute top-8 right-8 text-5xl font-bold text-slate-100 group-hover:text-amber-100 transition-colors">03</span>
-              <div className="relative w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🧠</div>
-              <span className="relative inline-block self-start px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold mb-6">Для личного развития</span>
+              <div className="relative flex items-center gap-3 mb-6 pr-14">
+                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-110 transition-transform">🧠</div>
+                <span className="text-sm font-bold text-blue-700 uppercase tracking-wide leading-snug">Для личного развития</span>
+              </div>
               <h3 className="relative text-xl font-bold text-slate-900 mb-4">Выросли из себя прежнего — и не знаете, кто теперь</h3>
               <p className="relative text-slate-600 mb-6 leading-relaxed flex-1">Для тех, кто проходит кризис идентичности, переосмысляет профессиональный путь или теряет смыслы. Психологическая работа с личностью, AQ-коучинг, практикумы и книжный клуб.</p>
               <ul className="relative text-sm text-slate-500 space-y-2 mb-8">
