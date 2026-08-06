@@ -62,7 +62,7 @@ export default function Home() {
                 </div>
                 <div className="text-center mt-4">
                   <p className="font-medium text-slate-900">Надежда Кудрявцева</p>
-                  <p className="text-xs text-slate-500 mt-0.5">Архитектор развития</p>
+                  <p className="text-xs text-slate-500 mt-2">Архитектор развития. Управление образовательными проектами.</p>
                 </div>
               </div>
 
@@ -282,12 +282,12 @@ export default function Home() {
                 Всего за 1.5–2 часа диагностики вы получите четкое понимание, какие управленческие инструменты помогут вам выйти на новый уровень.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Link href="/services/for-leaders/diagnostics" className="inline-flex justify-center bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-amber-900/30">
+                <Link href="/diagnostics" className="inline-flex justify-center bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-amber-900/30">
                   Узнать о диагностике
                 </Link>
-                <Link href="/contacts" className="inline-flex justify-center bg-transparent border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-full text-base font-semibold transition-all">
+                <a href="https://www.b17.ru/nadiya_coach/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center bg-transparent border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-full text-base font-semibold transition-all">
                   Связаться со мной
-                </Link>
+                </a>
               </div>
             </div>
           </div>
