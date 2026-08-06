@@ -37,7 +37,7 @@ export default function AboutPage() {
               </h1>
 
               <p className="text-2xl lg:text-3xl font-semibold text-slate-800 leading-snug border-l-4 border-amber-500 pl-6 italic mb-8 max-w-lg">
-                «Превращаю осознанность в результат»
+                «Руководитель-лидер — это профессия»
               </p>
 
               <p className="text-lg text-slate-500 leading-relaxed mb-6 max-w-lg">
@@ -111,6 +111,9 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
+              'Психолог-аналитик',
+              'Дипломированный AQ бизнес-коуч, Институт адаптивного интеллекта',
+              'Тренер-наставник AGP, Академия профессионального управления (Артём Губарец)',
               'Высшее экономическое и педагогическое образование',
               'Профпереподготовка: бизнес-тренер, коуч, психолог-консультант',
               'Призёр Всероссийского конкурса «Мастер бизнес-тренинга 2025», диплом 2 степени, от Ассоциации бизнес-тренеров РФ',
@@ -164,8 +167,8 @@ export default function AboutPage() {
             Счастливые люди делают сильный бизнес. Это не просто красивая фраза — это то, что я вижу в работе каждый день. Приходите — разберёмся, как это работает у вас.
           </p>
           <div className="flex justify-center">
-            <Link href="/services" className="group inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-slate-900/20">
-              Выбрать формат работы
+            <Link href="/services/for-leaders/diagnostics" className="group inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-slate-900/20">
+              Пройти диагностику
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </Link>
           </div>

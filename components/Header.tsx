@@ -18,7 +18,7 @@ export default function Header() {
           </div>
           <div className="block">
             <span className="block font-bold text-base sm:text-lg leading-tight text-slate-900">Надежда Кудрявцева</span>
-            <span className="hidden sm:block text-[10px] text-slate-500 font-medium tracking-wider uppercase">Система осознанных изменений</span>
+            <span className="hidden sm:block text-[10px] text-slate-500 font-medium tracking-wider uppercase">Проводник знаний в практику</span>
           </div>
         </Link>
 
@@ -44,7 +44,7 @@ export default function Header() {
               </div>
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
                 <Link href="/services/personal-growth" className="block font-semibold text-slate-900 mb-1">Для личного развития</Link>
-                <p className="text-xs text-slate-500">Интегральный коучинг, практикумы</p>
+                <p className="text-xs text-slate-500">Коучинг AQ, Пересборка, Практикумы, Книжный клуб</p>
               </div>
             </div>
           </div>

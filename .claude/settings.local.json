@@ -27,7 +27,9 @@
       "Bash(rm -rf \"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d---------Sites-my-ag-site\\\\e10c04e1-e3a4-4083-93d3-ba2e951cf54d\\\\scratchpad\\\\pw14\")",
       "Bash(mkdir -p 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d---------Sites-my-ag-site\\\\e10c04e1-e3a4-4083-93d3-ba2e951cf54d\\\\scratchpad/pw15')",
       "Bash(echo \"curl exit: $?\")",
-      "Bash(timeout 30 node mobile.js)"
+      "Bash(timeout 30 node mobile.js)",
+      "Bash(curl -s -o /dev/null -w \"home: %{http_code}\\\\n\" --max-time 40 http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"about: %{http_code}\\\\n\" --max-time 40 http://localhost:3000/about)"
     ]
   }
 }
