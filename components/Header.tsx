@@ -29,44 +29,46 @@ export default function Header() {
 
           {/* Выпадающее меню УСЛУГИ */}
           <div className="relative group">
-            <button className="flex items-center gap-1 px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">
+            <Link href="/services" className="flex items-center gap-1 px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">
               Услуги
               <svg className="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-            </button>
+            </Link>
             <div className="absolute top-full left-0 w-72 bg-white border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
-                <Link href="/services/for-leaders" className="block font-semibold text-slate-900 mb-1">Для предпринимателей, собственников и руководителей</Link>
-                <p className="text-xs text-slate-500">Диагностика, ИИ-тренажер, коучинг</p>
+                <Link href="/services/for-leaders" className="block font-semibold text-slate-900 mb-1">Для предпринимателей и руководителей</Link>
+                <p className="text-xs text-slate-500">Диагностика, AI-тренажёр, программы</p>
               </div>
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
                 <Link href="/services/for-teams" className="block font-semibold text-slate-900 mb-1">Для команд бизнеса</Link>
-                <p className="text-xs text-slate-500">Ассессмент, HR-архитектура, бизнес-игры</p>
+                <p className="text-xs text-slate-500">Ассессмент, образовательные проекты</p>
               </div>
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
                 <Link href="/services/personal-growth" className="block font-semibold text-slate-900 mb-1">Для личного развития</Link>
-                <p className="text-xs text-slate-500">Коучинг AQ, Пересборка, Практикумы, Книжный клуб</p>
+                <p className="text-xs text-slate-500">Индивидуальный коучинг и психологическая работа по запросу, Личная стратегия и пересборка, Арт-лекторий «Вишнёвый сад»</p>
               </div>
             </div>
           </div>
 
           {/* Выпадающее меню ПРОГРАММЫ */}
           <div className="relative group">
-            <button className="flex items-center gap-1 px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">
+            <Link href="/programs" className="flex items-center gap-1 px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">
               Программы
               <svg className="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-            </button>
+            </Link>
             <div className="absolute top-full left-0 w-72 bg-white border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
-                <Link href="/programs/rukovoditel-lider" className="block font-semibold text-slate-900 mb-1">Руководитель-лидер</Link>
-                <p className="text-xs text-slate-500">Развитие адаптивного лидерства и делегирования</p>
+                <Link href="/programs#avtorskie" className="block font-semibold text-slate-900 mb-1">Авторские программы</Link>
+                <p className="text-xs text-slate-500">Руководитель-лидер, Пересборка — веду лично</p>
               </div>
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
-                <Link href="/programs/peresborka" className="block font-semibold text-slate-900 mb-1">Пересборка</Link>
-                <p className="text-xs text-slate-500">Трансформация профессионального пути</p>
+                <Link href="/programs#partnerskie" className="block font-semibold text-slate-900 mb-1">Партнёрские программы</Link>
+                <p className="text-xs text-slate-500">Совместные проекты с приглашёнными экспертами</p>
               </div>
             </div>
           </div>
 
+          <Link href="/vishnevy-sad" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Вишнёвый сад</Link>
+          <Link href="/events" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Мероприятия</Link>
           <Link href="/cases" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Кейсы</Link>
           <Link href="/blog" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Блог</Link>
           <Link href="/contacts" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Контакты</Link>
@@ -102,16 +104,18 @@ export default function Header() {
             <Link href="/" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Главная</Link>
             <Link href="/about" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Обо мне</Link>
 
-            <div className="pt-3 pb-1 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Услуги</div>
-            <Link href="/services/for-leaders" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Для предпринимателей, собственников и руководителей</Link>
+            <Link href="/services" onClick={closeMenu} className="pt-3 pb-1 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Услуги</Link>
+            <Link href="/services/for-leaders" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Для предпринимателей и руководителей</Link>
             <Link href="/services/for-teams" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Для команд бизнеса</Link>
             <Link href="/services/personal-growth" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Для личного развития</Link>
 
-            <div className="pt-3 pb-1 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Программы</div>
-            <Link href="/programs/rukovoditel-lider" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Руководитель-лидер</Link>
-            <Link href="/programs/peresborka" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Пересборка</Link>
+            <Link href="/programs" onClick={closeMenu} className="pt-3 pb-1 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Программы</Link>
+            <Link href="/programs#avtorskie" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Авторские программы</Link>
+            <Link href="/programs#partnerskie" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Партнёрские программы</Link>
 
             <div className="pt-3" />
+            <Link href="/vishnevy-sad" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Вишнёвый сад</Link>
+            <Link href="/events" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Мероприятия</Link>
             <Link href="/cases" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Кейсы</Link>
             <Link href="/blog" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Блог</Link>
             <Link href="/contacts" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Контакты</Link>

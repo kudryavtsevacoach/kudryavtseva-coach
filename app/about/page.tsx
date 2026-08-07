@@ -167,7 +167,7 @@ export default function AboutPage() {
             Счастливые люди делают сильный бизнес. Это не просто красивая фраза — это то, что я вижу в работе каждый день. Приходите — разберёмся, как это работает у вас.
           </p>
           <div className="flex justify-center">
-            <Link href="/services/for-leaders/diagnostics" className="group inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-slate-900/20">
+            <Link href="/diagnostics" className="group inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all hover:shadow-xl hover:shadow-slate-900/20">
               Пройти диагностику
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </Link>
