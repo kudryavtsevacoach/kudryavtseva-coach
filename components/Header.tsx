@@ -25,7 +25,18 @@ export default function Header() {
         {/* Навигация (десктоп) */}
         <nav className="hidden xl:flex items-center gap-1 text-sm font-medium text-slate-700">
           <Link href="/" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Главная</Link>
-          <Link href="/about" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Обо мне</Link>
+
+          {/* Выпадающее меню ГЛАВНОЕ */}
+          <div className="relative group">
+            <span className="flex items-center gap-1 px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors cursor-default">
+              Главное
+              <svg className="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+            </span>
+            <div className="absolute top-full left-0 w-56 bg-white border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
+              <Link href="/about" className="block p-3 font-semibold text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Обо мне</Link>
+              <Link href="/cases" className="block p-3 font-semibold text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Кейсы</Link>
+            </div>
+          </div>
 
           {/* Выпадающее меню УСЛУГИ */}
           <div className="relative group">
@@ -67,10 +78,20 @@ export default function Header() {
             </div>
           </div>
 
-          <Link href="/vishnevy-sad" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Вишнёвый сад</Link>
-          <Link href="/events" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Мероприятия</Link>
-          <Link href="/cases" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Кейсы</Link>
-          <Link href="/blog" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Блог</Link>
+          <Link href="/vishnevy-sad" style={{ whiteSpace: 'nowrap' }} className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Вишнёвый сад</Link>
+
+          {/* Выпадающее меню БЛОГ */}
+          <div className="relative group">
+            <span className="flex items-center gap-1 px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors cursor-default">
+              Блог
+              <svg className="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+            </span>
+            <div className="absolute top-full left-0 w-56 bg-white border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
+              <Link href="/blog" className="block p-3 font-semibold text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Статьи</Link>
+              <Link href="/events" className="block p-3 font-semibold text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Мероприятия</Link>
+            </div>
+          </div>
+
           <Link href="/contacts" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Контакты</Link>
         </nav>
 
@@ -102,7 +123,10 @@ export default function Header() {
         <nav className="xl:hidden border-t border-slate-100 bg-white max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1 text-sm font-medium text-slate-700">
             <Link href="/" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Главная</Link>
+
+            <span className="pt-3 pb-1 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Главное</span>
             <Link href="/about" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Обо мне</Link>
+            <Link href="/cases" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Кейсы</Link>
 
             <Link href="/services" onClick={closeMenu} className="pt-3 pb-1 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Услуги</Link>
             <Link href="/services/for-leaders" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Для предпринимателей и руководителей</Link>
@@ -114,10 +138,12 @@ export default function Header() {
             <Link href="/programs#partnerskie" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Партнёрские программы</Link>
 
             <div className="pt-3" />
-            <Link href="/vishnevy-sad" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Вишнёвый сад</Link>
+            <Link href="/vishnevy-sad" onClick={closeMenu} style={{ whiteSpace: 'nowrap' }} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Вишнёвый сад</Link>
+
+            <span className="pt-3 pb-1 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Блог</span>
+            <Link href="/blog" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Статьи</Link>
             <Link href="/events" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Мероприятия</Link>
-            <Link href="/cases" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Кейсы</Link>
-            <Link href="/blog" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Блог</Link>
+
             <Link href="/contacts" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Контакты</Link>
 
             <Link href="/contacts" onClick={closeMenu} className="mt-3 inline-flex justify-center bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all">

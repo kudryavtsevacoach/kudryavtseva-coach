@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Вишнёвый сад | Надежда Кудрявцева',
+  title: 'Арт-лекторий «Вишнёвый сад» | Надежда Кудрявцева',
   description: 'Арт-лекторий «Вишнёвый сад» — пространство встреч на стыке психологии и искусства.',
 };
 
@@ -15,9 +15,8 @@ export default function VishnevySadPage() {
         <div className="pointer-events-none absolute -bottom-32 -left-32 w-[28rem] h-[28rem] bg-slate-100 rounded-full blur-3xl" />
 
         <div className="relative max-w-3xl mx-auto px-6 text-center">
-          <span className="text-amber-600 font-semibold text-sm uppercase tracking-wider mb-4 block">Арт-лекторий</span>
           <h1 className="text-3xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15] mb-6">
-            Вишнёвый сад
+            Арт-лекторий «Вишнёвый сад»
           </h1>
           <p className="text-lg lg:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
             Пространство встреч на стыке психологии и искусства — там, где личное развитие говорит на языке литературы, кино и живого разговора.
