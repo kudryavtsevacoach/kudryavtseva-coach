@@ -24,14 +24,12 @@ export default function Header() {
 
         {/* Навигация (десктоп) */}
         <nav className="hidden xl:flex items-center gap-1 text-sm font-medium text-slate-700">
-          <Link href="/" className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Главная</Link>
-
           {/* Выпадающее меню ГЛАВНОЕ */}
           <div className="relative group">
-            <span className="flex items-center gap-1 px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors cursor-default">
+            <Link href="/" className="flex items-center gap-1 px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">
               Главное
               <svg className="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-            </span>
+            </Link>
             <div className="absolute top-full left-0 w-56 bg-white border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
               <Link href="/about" className="block p-3 font-semibold text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Обо мне</Link>
               <Link href="/cases" className="block p-3 font-semibold text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Кейсы</Link>
@@ -122,9 +120,7 @@ export default function Header() {
       {isMenuOpen && (
         <nav className="xl:hidden border-t border-slate-100 bg-white max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1 text-sm font-medium text-slate-700">
-            <Link href="/" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Главная</Link>
-
-            <span className="pt-3 pb-1 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Главное</span>
+            <Link href="/" onClick={closeMenu} className="pt-3 pb-1 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Главное</Link>
             <Link href="/about" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Обо мне</Link>
             <Link href="/cases" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Кейсы</Link>
 
