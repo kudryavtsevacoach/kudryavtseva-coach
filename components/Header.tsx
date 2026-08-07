@@ -67,11 +67,11 @@ export default function Header() {
             <div className="absolute top-full left-0 w-72 bg-white border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
                 <Link href="/programs#avtorskie" className="block font-semibold text-slate-900 mb-1">Авторские программы</Link>
-                <p className="text-xs text-slate-500">Руководитель-лидер, Пересборка — веду лично</p>
+                <p className="text-xs text-slate-500">Пересборка, Вишнёвый сад, практикумы — мой авторский контент</p>
               </div>
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
                 <Link href="/programs#partnerskie" className="block font-semibold text-slate-900 mb-1">Партнёрские программы</Link>
-                <p className="text-xs text-slate-500">Совместные проекты с приглашёнными экспертами</p>
+                <p className="text-xs text-slate-500">Руководитель-лидер, AI-тренажёр — в партнёрстве с AGP</p>
               </div>
             </div>
           </div>

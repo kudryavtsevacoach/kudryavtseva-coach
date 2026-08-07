@@ -47,7 +47,7 @@ export default function ForLeadersPage() {
               <p className="relative text-slate-600 mb-6 leading-relaxed">
                 Отрабатывайте сложные управленческие разговоры — постановку задач, обратную связь, непростые переговоры — в безопасном формате с ИИ-собеседником, прежде чем применять новые навыки в реальной команде.
               </p>
-              <Link href="/ai-trainer" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all">
+              <Link href="/programs/ai-trainer" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all">
                 Узнать больше <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </Link>
             </div>
