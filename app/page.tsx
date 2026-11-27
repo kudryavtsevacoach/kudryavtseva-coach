@@ -1,3 +1,4 @@
+import OwnerArticle from "@/components/OwnerArticle";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -351,18 +352,8 @@ export default function Home() {
         </div>
       </section>
       <section id="journal" className="section journal">
-        <div className="wrap journal-inner">
-          <div>
-            <p className="eyebrow">Блог</p>
-            <h2>«Я уже три раза объяснил»</h2>
-            <p className="muted">
-              Серия карточек о самостоятельности команды. Когда руководителю
-              хочется объяснить ещё раз, что полезно заметить в самой ситуации?
-            </p>
-          </div>
-          <Link className="btn" href="/blog">
-            Перейти в блог
-          </Link>
+        <div className="wrap border-t border-slate-200 pt-10">
+          <OwnerArticle featured />
         </div>
       </section>
       <section id="contact" className="section contact">
