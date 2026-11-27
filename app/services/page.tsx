@@ -38,7 +38,6 @@ export default function ServicesPage() {
               <p className="relative text-slate-600 mb-6 leading-relaxed flex-1">Прокачайте AQ-мышление, навыки системного делегирования и взрастите лидерские компетенции, чтобы действовать из системы и смысла, а не из стресса.</p>
               <ul className="relative text-sm text-slate-500 space-y-2 mb-8">
                 <li>• Диагностика управленческих компетенций</li>
-                <li>• AI-тренажёр управленческих диалогов</li>
                 <li>• Программа «Руководитель-лидер»</li>
               </ul>
               <Link href="/services/for-leaders" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all mt-auto">
@@ -75,7 +74,7 @@ export default function ServicesPage() {
               <ul className="relative text-sm text-slate-500 space-y-2 mb-8">
                 <li>• Индивидуальный коучинг и психологическая работа по запросу</li>
                 <li>• Личная стратегия и пересборка</li>
-                <li>• Арт-лекторий «Вишнёвый сад»</li>
+                <li>• Проект «Искусство замечать»</li>
               </ul>
               <Link href="/services/personal-growth" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all mt-auto">
                 Узнать подробнее <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>

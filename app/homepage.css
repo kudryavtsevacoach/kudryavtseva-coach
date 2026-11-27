@@ -1,0 +1,812 @@
+.nk-home {
+  --ink: #17212e;
+  --muted: #59616c;
+  --accent: #b84420;
+  --accent-hover: #953519;
+  --paper: #fff;
+  --surface: #f3f4f5;
+  --line: #d9dee2;
+  --dark: #192b39;
+  --radius: 20px;
+  --max: 1240px;
+}
+.nk-home * {
+  box-sizing: border-box;
+}
+.nk-home {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+.nk-home {
+  margin: 0;
+  font:
+    400 17px/1.65 "Segoe UI",
+    Arial,
+    sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+.nk-home a {
+  color: inherit;
+  text-underline-offset: 5px;
+}
+.nk-home button {
+  font: inherit;
+}
+.nk-home a,
+.nk-home button {
+  -webkit-tap-highlight-color: transparent;
+}
+.nk-home a:focus-visible,
+.nk-home button:focus-visible,
+.nk-home summary:focus-visible {
+  outline: 3px solid #2678bd;
+  outline-offset: 5px;
+}
+.nk-home h1,
+.nk-home h2,
+.nk-home h3,
+.nk-home p {
+  margin: 0;
+}
+.nk-home h1,
+.nk-home h2,
+.nk-home h3 {
+  line-height: 1.12;
+  font-weight: 650;
+  letter-spacing: -0.035em;
+}
+.nk-home h1 {
+  font-size: clamp(40px, 4.45vw, 64px);
+  max-width: 770px;
+}
+.nk-home h2 {
+  font-size: clamp(32px, 3.2vw, 46px);
+}
+.nk-home h3 {
+  font-size: 28px;
+}
+.nk-home p + p {
+  margin-top: 16px;
+}
+.nk-home .wrap {
+  width: min(var(--max), calc(100% - 80px));
+  margin: auto;
+}
+.nk-home .eyebrow {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+.nk-home .section {
+  padding: 96px 0;
+}
+.nk-home .muted {
+  color: var(--muted);
+}
+.nk-home .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 12px 22px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--accent);
+  background: transparent;
+  cursor: pointer;
+  line-height: 1.4;
+  text-align: center;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.nk-home .btn.primary {
+  background: var(--accent);
+  color: white;
+}
+.nk-home .btn.primary:hover {
+  background: var(--accent-hover);
+}
+.nk-home .btn:hover {
+  background: #f7ece7;
+}
+.nk-home .actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.nk-home .hero {
+  padding: 72px 0 80px;
+}
+.nk-home .hero-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.nk-home .hero .name {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.nk-home .roles {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+.nk-home .hero h1 span {
+  color: var(--accent);
+}
+.nk-home .intro {
+  font-size: 21px;
+  line-height: 1.55;
+  margin-top: 26px;
+  max-width: 650px;
+}
+.nk-home .portrait {
+  position: relative;
+  aspect-ratio: 4/4.8;
+  background: #e9edf0;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.nk-home .portrait::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 82%;
+  border: 1px solid #bec9ce;
+  border-radius: 180px 180px 0 0;
+  top: 36px;
+  left: 10%;
+}
+.nk-home .portrait::after {
+  content: "";
+  position: absolute;
+  width: 52%;
+  height: 56%;
+  border: 1px solid #cbd3d7;
+  border-radius: 150px 150px 0 0;
+  top: 80px;
+  left: 24%;
+}
+.nk-home .section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 35px;
+  margin-bottom: 38px;
+}
+.nk-home .section-head p {
+  max-width: 410px;
+  color: var(--muted);
+}
+.nk-home .directions {
+  padding-top: 24px;
+}
+.nk-home .two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.nk-home .direction {
+  padding: 36px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border-top: 3px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+}
+.nk-home .direction h3 {
+  font-size: clamp(28px, 2.6vw, 37px);
+  max-width: 490px;
+}
+.nk-home .direction .lead {
+  font-size: 20px;
+  margin-top: 22px;
+}
+.nk-home .requests {
+  padding: 0;
+  list-style: none;
+  margin: 24px 0 32px;
+}
+.nk-home .requests li {
+  padding: 14px 0;
+  border-top: 1px solid #d7dce0;
+  line-height: 1.55;
+}
+.nk-home .direction .actions {
+  margin-top: auto;
+}
+.nk-home .direction .eyebrow {
+  margin-bottom: 20px;
+}
+.nk-home .approach {
+  background: var(--dark);
+  color: white;
+}
+.nk-home .approach .eyebrow {
+  color: #bfcdd5;
+}
+.nk-home .approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+.nk-home .approach h2 {
+  max-width: 520px;
+}
+.nk-home .approach .large {
+  font-size: 23px;
+  line-height: 1.5;
+  margin-top: 25px;
+}
+.nk-home .principles {
+  display: grid;
+  gap: 26px;
+}
+.nk-home .principles div {
+  border-bottom: 1px solid #49606d;
+  padding-bottom: 22px;
+}
+.nk-home .principles h3 {
+  font-size: 23px;
+  letter-spacing: -0.02em;
+  margin-bottom: 9px;
+}
+.nk-home .principles p {
+  color: #d1dbe1;
+}
+.nk-home .formats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.nk-home .format {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.nk-home .format .tag {
+  font-size: 14px;
+  color: var(--accent);
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+.nk-home .format h3 {
+  font-size: 27px;
+  min-height: 62px;
+}
+.nk-home .format p {
+  margin-top: 20px;
+  color: var(--muted);
+}
+.nk-home .format .outcome {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  color: var(--ink);
+}
+.nk-home .format .text-link {
+  margin-top: auto;
+  padding-top: 25px;
+}
+.nk-home .text-link {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 16px;
+}
+.nk-home .business-band {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 35px;
+  padding: 32px;
+  margin-top: 24px;
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.nk-home .business-band h3 {
+  font-size: 27px;
+}
+.nk-home .business-band p {
+  margin-top: 12px;
+  color: var(--muted);
+}
+.nk-home .business-band .actions {
+  margin-top: 16px;
+}
+.nk-home .culture {
+  background: #eef0ed;
+}
+.nk-home .culture-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 70px;
+  align-items: center;
+}
+.nk-home .culture-mark {
+  min-height: 430px;
+  background: #e0e5df;
+  border-radius: var(--radius);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.nk-home .culture-mark:before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #8e9c8a;
+  border-radius: 50%;
+  right: -55px;
+  bottom: 0;
+}
+.nk-home .culture-mark:after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #8e9c8a;
+  border-radius: 50%;
+  right: 55px;
+  bottom: 50px;
+}
+.nk-home .culture-mark .word {
+  font-size: clamp(36px, 4vw, 55px);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 1.08;
+  position: relative;
+  z-index: 1;
+}
+.nk-home .culture-mark .small {
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
+  max-width: 200px;
+}
+.nk-home .culture-copy .intro {
+  font-size: 23px;
+}
+.nk-home .culture-copy h3 {
+  font-size: 27px;
+  margin-top: 30px;
+}
+.nk-home .culture-copy p {
+  margin-top: 18px;
+}
+.nk-home .about-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+}
+.nk-home .about-name {
+  margin-top: 25px;
+  font-size: 28px;
+}
+.nk-home .about-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 24px;
+}
+.nk-home .about-labels span {
+  font-size: 14px;
+  padding: 7px 12px;
+  background: var(--surface);
+  border-radius: 6px;
+}
+.nk-home .about-copy {
+  font-size: 20px;
+}
+.nk-home .journal {
+  padding-top: 0;
+}
+.nk-home .journal-inner {
+  border-top: 1px solid var(--line);
+  padding-top: 38px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nk-home .journal h2 {
+  font-size: 32px;
+}
+.nk-home .journal p {
+  margin-top: 14px;
+  max-width: 700px;
+}
+.nk-home .journal .btn {
+  white-space: nowrap;
+}
+.nk-home .contact {
+  background: var(--dark);
+  color: white;
+}
+.nk-home .contact .eyebrow {
+  color: #c0ccd3;
+}
+.nk-home .contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: start;
+}
+.nk-home .contact h2 {
+  max-width: 700px;
+}
+.nk-home .contact p {
+  margin-top: 24px;
+  color: #d1dbe1;
+  font-size: 20px;
+}
+.nk-home .contact-note {
+  border-left: 1px solid #526571;
+  padding-left: 30px;
+}
+.nk-home .contact-note h3 {
+  font-size: 22px;
+}
+.nk-home .contact-note p {
+  font-size: 17px;
+  margin-top: 16px;
+}
+.nk-home .contact .btn {
+  background: #fff;
+  color: var(--ink);
+  border-color: white;
+}
+.nk-home .contact .btn:hover {
+  background: #e7ecef;
+}
+.nk-home .mobile-only {
+  display: none;
+}
+@media (min-width: 1500px) {
+  .nk-home h1 {
+    font-size: 66px;
+  }
+}
+@media (max-width: 1150px) {
+  .nk-home .hero-grid {
+    gap: 35px;
+  }
+  .nk-home .wrap {
+    width: calc(100% - 64px);
+  }
+  .nk-home .formats-grid {
+    gap: 14px;
+  }
+  .nk-home .format {
+    padding: 24px;
+  }
+  .nk-home .format h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 850px) {
+  .nk-home .wrap {
+    width: calc(100% - 40px);
+  }
+  .nk-home .section {
+    padding: 64px 0;
+  }
+  .nk-home .hero {
+    padding: 44px 0 52px;
+  }
+  .nk-home .hero-grid {
+    grid-template-columns: 1fr 0.75fr;
+    gap: 28px;
+  }
+  .nk-home .hero h1 {
+    font-size: 43px;
+  }
+  .nk-home .intro {
+    font-size: 18px;
+  }
+  .nk-home .roles {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .nk-home .portrait {
+    aspect-ratio: 3/5;
+    padding: 22px;
+  }
+  .nk-home .section-head {
+    display: block;
+  }
+  .nk-home .section-head p {
+    margin-top: 18px;
+    max-width: 650px;
+  }
+  .nk-home .two {
+    gap: 18px;
+  }
+  .nk-home .direction {
+    padding: 26px;
+  }
+  .nk-home .direction h3 {
+    font-size: 29px;
+  }
+  .nk-home .direction .lead {
+    font-size: 18px;
+  }
+  .nk-home .formats-grid {
+    grid-template-columns: 1fr;
+  }
+  .nk-home .format h3 {
+    min-height: 0;
+  }
+  .nk-home .format .text-link {
+    margin-top: 0;
+  }
+  .nk-home .approach-grid,
+  .nk-home .about-grid {
+    gap: 35px;
+  }
+  .nk-home .culture-grid {
+    gap: 35px;
+  }
+  .nk-home .culture-mark {
+    min-height: 400px;
+    padding: 28px;
+  }
+  .nk-home .business-band {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .nk-home .contact-grid {
+    gap: 40px;
+  }
+  .nk-home .journal {
+    padding-top: 0;
+  }
+  .nk-home .journal-inner {
+    gap: 25px;
+  }
+  .nk-home .journal .btn {
+    white-space: normal;
+    min-width: 170px;
+  }
+}
+@media (max-width: 600px) {
+  .nk-home .wrap {
+    width: calc(100% - 40px);
+  }
+  .nk-home .hero-grid,
+  .nk-home .two,
+  .nk-home .approach-grid,
+  .nk-home .culture-grid,
+  .nk-home .about-grid,
+  .nk-home .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .nk-home .hero-grid {
+    gap: 36px;
+  }
+  .nk-home .hero h1 {
+    font-size: 42px;
+    letter-spacing: -0.045em;
+  }
+  .nk-home .hero .name {
+    font-size: 19px;
+  }
+  .nk-home .hero .intro {
+    font-size: 19px;
+  }
+  .nk-home .portrait {
+    aspect-ratio: 4/3;
+    max-height: 320px;
+    padding: 24px;
+  }
+  .nk-home .portrait:before {
+    top: 18px;
+    height: 110%;
+  }
+  .nk-home .portrait:after {
+    top: 45px;
+    height: 100%;
+  }
+  .nk-home .directions {
+    padding-top: 0;
+  }
+  .nk-home .section {
+    padding-bottom: 60px;
+  }
+  .nk-home .section-head {
+    margin-bottom: 28px;
+  }
+  .nk-home h2 {
+    font-size: 34px;
+  }
+  .nk-home .direction {
+    padding: 26px;
+  }
+  .nk-home .direction h3 {
+    font-size: 30px;
+  }
+  .nk-home .direction .actions .btn {
+    width: 100%;
+  }
+  .nk-home .actions {
+    gap: 12px;
+  }
+  .nk-home .hero .actions .btn {
+    flex: 1 1 auto;
+  }
+  .nk-home .approach .large {
+    font-size: 21px;
+  }
+  .nk-home .approach-grid {
+    gap: 35px;
+  }
+  .nk-home .culture-mark {
+    min-height: 270px;
+  }
+  .nk-home .culture-mark .word {
+    font-size: 44px;
+  }
+  .nk-home .culture-copy .intro {
+    font-size: 21px;
+  }
+  .nk-home .about-grid {
+    gap: 30px;
+  }
+  .nk-home .about-copy {
+    font-size: 18px;
+  }
+  .nk-home .journal-inner {
+    display: block;
+  }
+  .nk-home .journal .btn {
+    margin-top: 22px;
+  }
+  .nk-home .contact-grid {
+    gap: 40px;
+  }
+  .nk-home .contact-note {
+    padding-left: 22px;
+  }
+  .nk-home .format h3 {
+    font-size: 27px;
+  }
+  .nk-home .business-band {
+    padding: 26px;
+  }
+  .nk-home .roles {
+    max-width: 310px;
+  }
+  .nk-home .mobile-only {
+    display: inline;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nk-home {
+    scroll-behavior: auto;
+  }
+  .nk-home * {
+    transition: none !important;
+  }
+}
+@media print {
+  .nk-home .section,
+  .nk-home .hero {
+    padding: 30px 0;
+  }
+  .nk-home .wrap {
+    width: 100%;
+  }
+  .nk-home .portrait {
+    max-height: 320px;
+  }
+  .nk-home .direction,
+  .nk-home .format,
+  .nk-home .culture-grid,
+  .nk-home .contact {
+    break-inside: avoid;
+  }
+  .nk-home {
+    font-size: 12pt;
+  }
+  .nk-home h1 {
+    font-size: 36pt;
+  }
+  .nk-home h2 {
+    font-size: 28pt;
+  }
+  .nk-home .btn {
+    border-color: #777;
+  }
+  .nk-home a {
+    text-decoration: none;
+  }
+}
+
+.nk-home .hero h1 {
+  font-size: clamp(32px, 3.3vw, 50px);
+  text-wrap: balance;
+}
+.nk-home .portrait {
+  aspect-ratio: 1/1.05;
+}
+.nk-home .direction .lead {
+  margin-bottom: 26px;
+}
+.nk-home .business {
+  background: #f4f5f4;
+}
+.nk-home .business .direction {
+  background: white;
+}
+.nk-home .culture-mark .word {
+  margin: auto 0;
+}
+.nk-home .directions {
+  padding-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .nk-home .hero h1 {
+    font-size: clamp(29px, 7.9vw, 38px);
+  }
+  .nk-home .portrait {
+    aspect-ratio: 2/1;
+  }
+  .nk-home .direction h3 {
+    font-size: 26px;
+  }
+  .nk-home .culture-mark {
+    min-height: 200px;
+  }
+  .nk-home .hero-grid {
+    gap: 24px;
+  }
+  .nk-home .section {
+    padding-top: 50px;
+  }
+}
+.nk-home .portrait::before,
+.nk-home .portrait::after {
+  display: none;
+}
+.nk-home .portrait {
+  padding: 0;
+}
+.nk-home .portrait img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: 50% 34%;
+}
+.nk-home .business .direction .tag {
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+.nk-home .business .direction {
+  display: flex;
+  flex-direction: column;
+}
+.nk-home .business .direction .actions {
+  margin-top: auto;
+  padding-top: 24px;
+}

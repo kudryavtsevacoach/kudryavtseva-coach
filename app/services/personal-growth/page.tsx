@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Для личного развития | Надежда Кудрявцева',
-  description: 'Индивидуальный коучинг, личная стратегия и пересборка, авторские практикумы, книжный клуб и арт-лекторий «Вишнёвый сад».',
+  description: 'Индивидуальный коучинг, личная стратегия и пересборка, авторские практикумы, книжный клуб и проект «Искусство замечать».',
 };
 
 export default function PersonalGrowthPage() {
@@ -60,12 +60,12 @@ export default function PersonalGrowthPage() {
 
             <div className="group relative bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
               <div className="relative w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🌸</div>
-              <h2 className="relative text-lg font-bold text-slate-900 mb-4">Арт-лекторий «Вишнёвый сад»</h2>
+              <h2 className="relative text-lg font-bold text-slate-900 mb-4">Проект «Искусство замечать»</h2>
               <p className="relative text-slate-600 leading-relaxed mb-6">
                 Пространство встреч на стыке психологии и искусства.
               </p>
               <Link href="/vishnevy-sad" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all">
-                Подробнее о «Вишнёвом саде» <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                Подробнее о проекте <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </Link>
             </div>
           </div>
