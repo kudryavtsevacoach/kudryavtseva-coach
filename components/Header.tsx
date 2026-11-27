@@ -45,7 +45,7 @@ export default function Header() {
             <div className="absolute top-full left-0 w-72 bg-white border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
                 <Link href="/services/for-leaders" className="block font-semibold text-slate-900 mb-1">Для предпринимателей и руководителей</Link>
-                <p className="text-xs text-slate-500">Диагностика, AI-тренажёр, программы</p>
+                <p className="text-xs text-slate-500">Диагностика управленческих компетенций и развитие навыков делегирования</p>
               </div>
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
                 <Link href="/services/for-teams" className="block font-semibold text-slate-900 mb-1">Для команд бизнеса</Link>
@@ -53,7 +53,7 @@ export default function Header() {
               </div>
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
                 <Link href="/services/personal-growth" className="block font-semibold text-slate-900 mb-1">Для личного развития</Link>
-                <p className="text-xs text-slate-500">Индивидуальный коучинг и психологическая работа по запросу, Личная стратегия и пересборка, Арт-лекторий «Вишнёвый сад»</p>
+                <p className="text-xs text-slate-500">Индивидуальный коучинг и психологическая работа по запросу, Личная стратегия и пересборка, Проект «Искусство замечать»</p>
               </div>
             </div>
           </div>
@@ -67,16 +67,16 @@ export default function Header() {
             <div className="absolute top-full left-0 w-72 bg-white border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
                 <Link href="/programs#avtorskie" className="block font-semibold text-slate-900 mb-1">Авторские программы</Link>
-                <p className="text-xs text-slate-500">Пересборка, Вишнёвый сад, практикумы — мой авторский контент</p>
+                <p className="text-xs text-slate-500">Пересборка, Искусство замечать, практикумы — мой авторский контент</p>
               </div>
               <div className="p-3 hover:bg-slate-50 rounded-lg transition-colors">
                 <Link href="/programs#partnerskie" className="block font-semibold text-slate-900 mb-1">Партнёрские программы</Link>
-                <p className="text-xs text-slate-500">Руководитель-лидер, AI-тренажёр — в партнёрстве с AGP</p>
+                <p className="text-xs text-slate-500">Руководитель-лидер — в партнёрстве с AGP</p>
               </div>
             </div>
           </div>
 
-          <Link href="/vishnevy-sad" style={{ whiteSpace: 'nowrap' }} className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Вишнёвый сад</Link>
+          <Link href="/vishnevy-sad" style={{ whiteSpace: 'nowrap' }} className="px-3 py-2 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Искусство замечать</Link>
 
           {/* Выпадающее меню БЛОГ */}
           <div className="relative group">
@@ -134,7 +134,7 @@ export default function Header() {
             <Link href="/programs#partnerskie" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Партнёрские программы</Link>
 
             <div className="pt-3" />
-            <Link href="/vishnevy-sad" onClick={closeMenu} style={{ whiteSpace: 'nowrap' }} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Вишнёвый сад</Link>
+            <Link href="/vishnevy-sad" onClick={closeMenu} style={{ whiteSpace: 'nowrap' }} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Искусство замечать</Link>
 
             <span className="pt-3 pb-1 px-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Блог</span>
             <Link href="/blog" onClick={closeMenu} className="px-3 py-2.5 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">Статьи</Link>

@@ -2,8 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Арт-лекторий «Вишнёвый сад» | Надежда Кудрявцева',
-  description: 'Арт-лекторий «Вишнёвый сад» — пространство встреч на стыке психологии и искусства.',
+  title: 'Проект «Искусство замечать» | Надежда Кудрявцева',
+  description: 'Проект «Искусство замечать» — пространство встреч на стыке психологии и искусства.',
 };
 
 export default function VishnevySadPage() {
@@ -16,7 +16,7 @@ export default function VishnevySadPage() {
 
         <div className="relative max-w-3xl mx-auto px-6 text-center">
           <h1 className="text-3xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15] mb-6">
-            Арт-лекторий «Вишнёвый сад»
+            Проект «Искусство замечать»
           </h1>
           <p className="text-lg lg:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
             Пространство встреч на стыке психологии и искусства — там, где личное развитие говорит на языке литературы, кино и живого разговора.
@@ -29,9 +29,9 @@ export default function VishnevySadPage() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center py-16 bg-[#FAFAF9] rounded-[2rem] border border-slate-100">
             <div className="text-6xl mb-6">🌸</div>
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">Программа лектория в разработке</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Друзья по досугу: читаем иначе</h2>
             <p className="text-slate-600 mb-8 max-w-xl mx-auto">
-              Скоро здесь появится расписание встреч. Если хотите узнать о первой встрече раньше остальных — напишите мне.
+              На групповых встречах читаем и обсуждаем, на каком месте захотелось задержаться, с чем хочется спорить и что вдруг узнаётся в собственной жизни. Я подбираю материалы и веду разговор.
             </p>
             <Link href="/contacts" className="inline-flex bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-base font-semibold transition-all">
               Узнать о ближайшей встрече

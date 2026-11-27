@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Программы | Надежда Кудрявцева',
-  description: 'Авторские программы «Пересборка», «Вишнёвый сад» и практикумы, а также партнёрские программы «Руководитель-лидер» и AI-тренажёр в партнёрстве с AGP.',
+  description: 'Авторские программы «Пересборка», «Искусство замечать» и практикумы, а также партнёрская программа «Руководитель-лидер» в партнёрстве с AGP.',
 };
 
 export default function ProgramsPage() {
@@ -44,7 +44,7 @@ export default function ProgramsPage() {
 
             <div className="group relative bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
               <div className="relative w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🌸</div>
-              <h3 className="relative text-lg font-bold text-slate-900 mb-4">Арт-лекторий «Вишнёвый сад»</h3>
+              <h3 className="relative text-lg font-bold text-slate-900 mb-4">Проект «Искусство замечать»</h3>
               <p className="relative text-slate-600 mb-6 leading-relaxed">Пространство встреч на стыке психологии и искусства — там, где личное развитие говорит на языке литературы, кино и живого разговора.</p>
               <Link href="/vishnevy-sad" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all">
                 Подробнее о лектории <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
@@ -82,15 +82,7 @@ export default function ProgramsPage() {
               </Link>
             </div>
 
-            <div className="group relative bg-white hover:bg-white border border-slate-100 hover:border-slate-900 p-8 lg:p-10 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
-              <div className="relative w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🤖</div>
-              <span className="relative inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-semibold mb-4">В партнёрстве с AGP, Академией профессионального управления</span>
-              <h3 className="relative text-xl font-bold text-slate-900 mb-4">AI-тренажёр управленческих диалогов</h3>
-              <p className="relative text-slate-600 mb-6 leading-relaxed">Отрабатывайте сложные управленческие разговоры с ИИ-собеседником в безопасной среде, прежде чем применять новые навыки в реальной команде.</p>
-              <Link href="/programs/ai-trainer" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all">
-                Подробнее о программе <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-              </Link>
-            </div>
+
           </div>
         </div>
       </section>

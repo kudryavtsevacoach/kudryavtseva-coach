@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Для предпринимателей, собственников и руководителей | Надежда Кудрявцева',
-  description: 'AQ-мышление, системное делегирование и лидерские компетенции — диагностика управленческого стиля и ИИ-тренажер управленческих диалогов.',
+  description: 'AQ-мышление, системное делегирование и лидерские компетенции — диагностика управленческого стиля и рекомендации по развитию.',
 };
 
 export default function ForLeadersPage() {
@@ -27,7 +27,7 @@ export default function ForLeadersPage() {
       {/* --- ФОРМАТЫ РАБОТЫ --- */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+          <div className="grid max-w-3xl mx-auto gap-6 lg:gap-8">
             {/* Диагностика управленческих компетенций */}
             <div className="group relative bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 lg:p-10 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
               <div className="relative w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🎯</div>
@@ -40,17 +40,7 @@ export default function ForLeadersPage() {
               </Link>
             </div>
 
-            {/* ИИ-тренажер управленческих диалогов */}
-            <div className="group relative bg-slate-50 hover:bg-white border border-slate-100 hover:border-slate-900 p-8 lg:p-10 rounded-[2rem] transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1">
-              <div className="relative w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">🤖</div>
-              <h2 className="relative text-xl font-bold text-slate-900 mb-4">ИИ-тренажер управленческих диалогов</h2>
-              <p className="relative text-slate-600 mb-6 leading-relaxed">
-                Отрабатывайте сложные управленческие разговоры — постановку задач, обратную связь, непростые переговоры — в безопасном формате с ИИ-собеседником, прежде чем применять новые навыки в реальной команде.
-              </p>
-              <Link href="/programs/ai-trainer" className="relative inline-flex items-center gap-2 text-slate-900 hover:text-amber-600 font-semibold hover:gap-3 transition-all">
-                Узнать больше <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-              </Link>
-            </div>
+
           </div>
         </div>
       </section>
