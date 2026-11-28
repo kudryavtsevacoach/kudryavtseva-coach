@@ -614,8 +614,6 @@
     font-size: 19px;
   }
   .nk-home .portrait {
-    aspect-ratio: 4/3;
-    max-height: 320px;
     padding: 24px;
   }
   .nk-home .portrait:before {
@@ -768,7 +766,8 @@
     font-size: clamp(29px, 7.9vw, 38px);
   }
   .nk-home .portrait {
-    aspect-ratio: 2/1;
+    aspect-ratio: 1707 / 2560;
+    max-height: none;
   }
   .nk-home .direction h3 {
     font-size: 26px;
@@ -809,4 +808,10 @@
 .nk-home .business .direction .actions {
   margin-top: auto;
   padding-top: 24px;
+}
+
+@media (max-width: 600px) {
+  .nk-home .portrait img {
+    object-fit: contain;
+  }
 }
